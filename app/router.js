@@ -6,6 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('about');
+  this.resource('tourneys', function() {
+    this.route('new');
+  });
+  this.route('players');
 });
 
 export default Router;

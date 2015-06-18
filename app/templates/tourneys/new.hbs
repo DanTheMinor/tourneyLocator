@@ -1,0 +1,7 @@
+<div class="new-tourney-form">
+  {{input type="text" placeholder="Name of Tournament" value=title class="title-input"}}
+  {{input type="text" placeholder="Location" value=location class="location-input"}}
+  {{input type="text" placeholder="Date of tournament" value=date class="date-input"}}
+
+  <button {{action 'addTourney'}} class="submit"> Submit</button>
+</div>
